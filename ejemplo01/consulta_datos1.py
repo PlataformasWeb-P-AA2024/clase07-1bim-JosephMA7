@@ -21,14 +21,16 @@ session = Session()
 # la entidad Club
 clubs = session.query(Club).all()
 print(clubs)
+
 # Se recorre la lista a través de un ciclo
 # repetitivo for en python
-# print("Presentación de Clubs")
-# for s in clubs:
-#     print("%s" % (s.nombre))
-#     print("%s" % (s.id))
-#     print("---------")
-
+print("Presentación de Clubs")
+for s in clubs:
+    print("%s" % (s.nombre))
+    print("%s" % (s.id))
+    print("%s" % (s.fundacion))
+    print("---------")
+print("$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$")
 # Obtener todos los registros de 
 # la entidad Jugador
 jugadores = session.query(Jugador).all()
